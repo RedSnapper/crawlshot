@@ -1,0 +1,31 @@
+{
+  "name": "crawlshotter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/crawlshotter.js",
+  "bin": {
+    "crawlshotter": "./bin/index.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "extend": "^3.0.0",
+    "node-fs": "^0.1.7",
+    "pageres": "^4.1.2",
+    "simplecrawler": "^0.7.0",
+    "webshot": "^0.18.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paramdhal/gulpstart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paramdhal/gulpstart/issues"
+  },
+  "homepage": "https://github.com/paramdhal/gulpstart#readme"
+}
