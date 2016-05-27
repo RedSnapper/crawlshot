@@ -3,7 +3,7 @@
 'use strict';
 
 const program = require('commander'),
-  crawlShotter = require('../lib/crawlShotter.js');
+  crawlShotter = require('../lib/crawlshot.js');
 
 let settings = {pageres: { options: {} },crawler: {}};
 
