@@ -3,25 +3,28 @@
 'use strict';
 
 const program = require('commander'),
-  crawlShotter = require('../lib/crawlshot.js');
+  crawlShotter = require('../lib/crawlshot-main.js'),
+  colors = require('colors');
 
 let settings = {pageres: { options: {} },crawler: {}};
 
+program.usage('URL'.green + ' [options]'.yellow);
+
 program.option('-d, --debug', 'Debugging enabled',
 			function() {
-				console.log('  - debugging enabled');
+				console.log('  - debugging enabled'.green);
 				settings.debug = true;
 			}
 		)
 		.option('-m, --mobile', 'screenshotting at mobile size', 
 			function() { 
-				console.log('  - mobile mode enabled'); 
+				console.log('  - mobile mode enabled'.green); 
 				settings.pageres.size = '600x480'; 
 			}
 		)
 		.option('-D, --depth <n>','choose the depth we crawl to',
 			function(n) {
-				console.log('  - depth set to ' +n); 
+				console.log(`  - depth set to ${n}`.green); 
 				settings.crawler.depth = n; 
 			}
 		)
@@ -41,8 +44,15 @@ program.option('-d, --debug', 'Debugging enabled',
 		)
 		.parse(process.argv);
 
+if(!program.args.length) {
+	console.log('No URL provided; use "crawlshot --help" for user info'.yellow);
+	return;
+}
+
 if(program.args[0].length) {
 	var query = program.args[0];
+} else {
+
 }
 
 if(query) {

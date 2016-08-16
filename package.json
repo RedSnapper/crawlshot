@@ -2,9 +2,9 @@
   "name": "rs.crawlshot",
   "version": "1.0.2",
   "description": "",
-  "main": "./lib/crawlshot.js",
+  "main": "./lib/crawlshot-main.js",
   "bin": {
-    "crawlshot": "./bin/index.js"
+    "crawlshot": "./bin/crawlshot.js"
   },
   "dependencies": {
     "commander": "^2.9.0",
@@ -14,7 +14,10 @@
     "simplecrawler": "^0.7.0",
     "webshot": "^0.18.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "colorize": "^0.1.0",
+    "colors": "^1.1.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
