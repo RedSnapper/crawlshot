@@ -1,10 +1,10 @@
 {
-  "name": "crawlshotter",
-  "version": "1.0.1",
+  "name": "rs.crawlshot",
+  "version": "1.0.2",
   "description": "",
-  "main": "./lib/crawlshotter.js",
+  "main": "./lib/crawlshot.js",
   "bin": {
-    "crawlshotter": "./bin/index.js"
+    "crawlshot": "./bin/index.js"
   },
   "dependencies": {
     "commander": "^2.9.0",
