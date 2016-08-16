@@ -28,14 +28,14 @@ program.option('-d, --debug', 'Debugging enabled',
 		.option('-u, --username <u>','enter a username',
 			function(u) {
 				// set pageres and crawler usernames
-				settings.crawler.authUser = settings.pageres.options.username = u;				
-				settings.crawler.needsAuth = true;				
+				settings.crawler.authUser = settings.pageres.options.username = u;
+				settings.crawler.needsAuth = true;
 			}
 		)
 		.option('-p, --password <p>','enter a password',
 			function(p){
 				// set pageres and crawler passwords
-				settings.crawler.authPass = settings.pageres.options.password = p;				
+				settings.crawler.authPass = settings.pageres.options.password = p;
 				settings.crawler.needsAuth = true;
 			}
 		)
