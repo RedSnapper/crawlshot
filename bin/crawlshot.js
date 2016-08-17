@@ -42,6 +42,26 @@ program.option('-d, --debug', 'Debugging enabled',
 				settings.crawler.needsAuth = true;
 			}
 		)
+		.option('-r, --directory <directories>','restrict crawl to provided directories',
+			(directories)=>{
+				console.log(` - restricting crawl to: ${directories}`);
+
+				let dirArray = [];
+
+				if(directories.indexOf(',') !== -1) {
+					dirArray = directories.split(',');
+				} else {
+					dirArray.push(directories);
+				}
+
+				dirArray.forEach((item,index)=>{
+					dirArray[index] = `/${item}/`;
+				});
+
+				settings.directories = dirArray; 
+				settings.directory = true;
+			}
+		)
 		.parse(process.argv);
 
 if(!program.args.length) {

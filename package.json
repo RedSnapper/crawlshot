@@ -1,6 +1,6 @@
 {
   "name": "rs.crawlshot",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "./lib/crawlshot-main.js",
   "bin": {
@@ -15,7 +15,6 @@
     "webshot": "^0.18.0"
   },
   "devDependencies": {
-    "colorize": "^0.1.0",
     "colors": "^1.1.2"
   },
   "scripts": {
