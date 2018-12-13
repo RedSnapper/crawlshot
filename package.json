@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paramdhal/gulpstart.git"
+    "url": "git+https://github.com/RedSnapper/crawlshot.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/paramdhal/gulpstart/issues"
+    "url": "https://github.com/RedSnapper/crawlshot/issues"
   },
-  "homepage": "https://github.com/paramdhal/gulpstart#readme"
+  "homepage": "https://github.com/RedSnapper/crawlshot#readme"
 }
